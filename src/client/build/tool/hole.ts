@@ -19,7 +19,7 @@ export class HoleTool implements Tool<HoleToolContext> {
         part.Name = "Wall"
         part.Anchored = true
         part.Transparency = 0.5
-        part.Color = new Color3(0.5, 0, 1)
+        part.Color = new Color3(1.0, 0, 0)
         part.Size = new Vector3(0.1, 0.1, 0.1)
         part.Position = position.add(new Vector3(0, 0.5, 0))
         part.Archivable = true

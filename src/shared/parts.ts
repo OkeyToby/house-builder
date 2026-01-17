@@ -18,7 +18,6 @@ export function deserializePart({ Name, Position, Size, Shape }: SerializedPart)
     return part
 }
 
-// Center part 
 export function positionPartAtStart(part: Part, start: Vector3, size: Vector3) {
     part.Size = size.Abs()
     part.Position = new Vector3(start.X + size.X / 2, start.Y + size.Y / 2, start.Z + size.Z / 2)
