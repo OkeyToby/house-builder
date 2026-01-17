@@ -1,12 +1,12 @@
-import { serializePart } from "shared/parts";
-import { floorHeight, storyHeight, wallWidth } from "../constants";
-import { Tool, ToolContext } from "./tool";
-import { TypedReplicatedStorage } from "shared/types";
+import { serializePart } from "shared/parts"
+import { floorHeight, storyHeight, wallWidth } from "../constants"
+import { Tool, ToolContext } from "./tool"
+import { TypedReplicatedStorage } from "shared/types"
 
 const { CreatePartEvent } = game.GetService("ReplicatedStorage") as TypedReplicatedStorage
 
 export class WallTool implements Tool {
-    public steps = 1;
+    public steps = 1
 
     public start(hit: RaycastResult, position: Vector3): ToolContext {
         const part = new Instance("Part")

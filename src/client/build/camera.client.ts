@@ -1,4 +1,4 @@
-import { normalizeVector, vectorWithComponents } from "shared/vectors";
+import { normalizeVector, vectorWithComponents } from "shared/vectors"
 
 const runService = game.GetService("RunService")
 const { LocalPlayer: player } = game.GetService("Players")

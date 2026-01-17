@@ -1,7 +1,7 @@
-import { positionPartAtStart, serializePart } from "shared/parts";
-import { Tool, ToolContext } from "./tool";
-import { floorHeight, wallWidth } from "../constants";
-import { TypedReplicatedStorage } from "shared/types";
+import { positionPartAtStart, serializePart } from "shared/parts"
+import { Tool, ToolContext } from "./tool"
+import { floorHeight, wallWidth } from "../constants"
+import { TypedReplicatedStorage } from "shared/types"
 
 const { CutHoleEvent } = game.GetService("ReplicatedStorage") as TypedReplicatedStorage
 const collectionService = game.GetService("CollectionService")

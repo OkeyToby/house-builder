@@ -1,9 +1,9 @@
-import { deserializePart, SerializedPart } from "shared/parts";
-import { TypedReplicatedStorage } from "shared/types";
+import { deserializePart, SerializedPart } from "shared/parts"
+import { TypedReplicatedStorage } from "shared/types"
 
 const { ToggleBuildModeEvent, CreatePartEvent, CutHoleEvent } = game.GetService("ReplicatedStorage") as TypedReplicatedStorage
-const collectionService = game.GetService("CollectionService");
-const httpService = game.GetService("HttpService");
+const collectionService = game.GetService("CollectionService")
+const httpService = game.GetService("HttpService")
 
 ToggleBuildModeEvent.OnServerEvent.Connect((player) => {
     const character = player.Character ?? player.CharacterAdded.Wait()[0]

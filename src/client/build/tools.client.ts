@@ -1,8 +1,8 @@
-import { roundToValue } from "shared/numbers";
-import { Tool, ToolContext } from "./tool/tool";
-import { WallTool } from "./tool/wall";
-import { RoomTool } from "./tool/room";
-import { HoleTool } from "./tool/hole";
+import { roundToValue } from "shared/numbers"
+import { Tool, ToolContext } from "./tool/tool"
+import { WallTool } from "./tool/wall"
+import { RoomTool } from "./tool/room"
+import { HoleTool } from "./tool/hole"
 
 const replicatedStorage = game.GetService("ReplicatedStorage")
 const userInputService = game.GetService("UserInputService")

@@ -1,7 +1,7 @@
-import { positionPartAtStart, serializePart } from "shared/parts";
-import { floorHeight, storyHeight, wallWidth } from "../constants";
-import { Tool, ToolContext } from "./tool";
-import { TypedReplicatedStorage } from "shared/types";
+import { positionPartAtStart, serializePart } from "shared/parts"
+import { floorHeight, storyHeight, wallWidth } from "../constants"
+import { Tool, ToolContext } from "./tool"
+import { TypedReplicatedStorage } from "shared/types"
 
 const { CreatePartEvent } = game.GetService("ReplicatedStorage") as TypedReplicatedStorage
 
@@ -9,7 +9,7 @@ export class RoomTool implements Tool {
     public steps = 1
 
     public start(hit: RaycastResult, position: Vector3): ToolContext {
-        const parts = [];
+        const parts = []
 
         for (let i = 0; i < 4; i++) {
             const part = new Instance("Part")
