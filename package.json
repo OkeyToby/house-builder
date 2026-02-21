@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rbxtsc",
-    "watch": "rbxtsc -w"
+    "watch": "rbxtsc -w",
+    "rojo:serve": "\"%USERPROFILE%\\.aftman\\bin\\rojo.exe\" serve",
+    "rojo:version": "\"%USERPROFILE%\\.aftman\\bin\\rojo.exe\" --version"
   },
   "keywords": [],
   "author": "",
